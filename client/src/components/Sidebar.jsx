@@ -130,7 +130,7 @@ const Sidebar = ({
               <FlexBetween color={theme.palette.secondary.main}>
                 <Box display="flex" alignItems="center" gap="0.5rem">
                   <Typography variant="h4" fontWeight="bold">
-                    ECOMVISION
+                    Administrative Interface
                   </Typography>
                 </Box>
                 {!isNonMobile && (
@@ -169,19 +169,19 @@ const Sidebar = ({
                       }}
                     >
                       <ListItemIcon
-                     sx={{
-                        ml: "2rem",
-                        color:
-                          active === lcText
-                            ? theme.palette.primary[600]
-                            : theme.palette.secondary[200],
-                      }}
+                        sx={{
+                          ml: "2rem",
+                          color:
+                            active === lcText
+                              ? theme.palette.primary[600]
+                              : theme.palette.secondary[200],
+                        }}
                       >
-                      {icon}
+                        {icon}
                       </ListItemIcon>
-                      <ListItemText  primary={text}/>
-                      {active===lcText && (
-                        <ChevronRightOutlined sx={{ml:"auto"}}/>
+                      <ListItemText primary={text} />
+                      {active === lcText && (
+                        <ChevronRightOutlined sx={{ ml: "auto" }} />
                       )}
                     </ListItemButton>
                   </ListItem>
@@ -224,7 +224,6 @@ const Sidebar = ({
               />
             </FlexBetween>
           </Box>
-
         </Drawer>
       )}
     </Box>
